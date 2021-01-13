@@ -1,0 +1,52 @@
+/* Header CSS */
+
+.header-content {
+    background: $black_color;
+    padding: 15px 0;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu {
+    display: flex;
+    margin-bottom: 0;
+
+    li {
+
+        list-style: none;
+        margin-left: 25px;
+
+        a {
+            color: $white_color;
+            display: block;
+            font-size: 16px;
+            text-transform: uppercase;
+            @include transition();
+
+            &:hover {
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header-btn {
+    margin-left: 25px;
+    
+    .btn-mespace {
+        color: $white_color;
+        text-decoration: none;
+        border: 1px solid $white_color;
+        border-radius: 30px;
+        padding: 7px 15px;
+    }
+}
+
+.second-header {
+     background: $primary-color;
+         
+    padding: 15px 0;
+    min-height: 90px;
+}
