@@ -1,8 +1,15 @@
 /* Header CSS */
 
+.header-site {
+    position: relative;
+    
+    .header-top {
+        margin-top: -40px;
+    }
+}
 .header-content {
     background: $black_color;
-    padding: 15px 0;
+    padding: 20px 0 60px;
     min-height: 90px;
     display: flex;
     align-items: center;
@@ -40,18 +47,39 @@
         text-decoration: none;
         border: 1px solid $white_color;
         border-radius: 30px;
-        padding: 7px 15px;
+        padding: 7px 15px 7px 40px;
+        background-image: url(../img/lock.png);
+        background-repeat: no-repeat;
+        background-position:  15px center;
     }
 }
 
 .second-header {
-    background: $primary-color;
-
-    padding: 15px 0;
-    min-height: 90px;
+    
     display: flex;
     align-items: center;
 
+    .container {
+        background: $primary-color;
+ 
+        
+        .second-menu {
+            height: 90px;
+            
+        }
+    }
+    .hotline-btn {
+        
+        position: relative;
+        
+        p{
+            font-size: 10px;
+            margin: 0;
+            position: absolute;
+            right: 22px;
+            
+        }
+    }
 
     .btn-hotline {
         display: inline-block;
