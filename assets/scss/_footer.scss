@@ -1,2 +1,26 @@
 /* Footer CSS */
 
+.site-footer {
+    padding: 70px 0;
+}
+
+.footer-link {
+    ul {
+        li {
+            
+            list-style: none;
+            
+            a {
+                color: $black_color;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.copyright-wrap {
+    p{
+        color: #707070;
+    }
+}
