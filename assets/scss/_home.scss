@@ -1,0 +1,57 @@
+// home Style
+
+
+.situation_section {
+    
+    background-color: $black_color;
+    padding: 20px 0;
+    color: $white_color;
+    
+    .content-box {
+        
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+.contact-section {
+    
+    padding: 90px 0; 
+    
+    .image_item {
+        
+        img {
+            
+            width: 100%;
+            display: block;
+            
+        }
+    }
+
+}
+
+.block-title {
+    
+    .sec_titles {
+        
+        text-transform: uppercase;
+    }
+}
+.marquage-section {
+    
+    .image-box {
+        
+        img {
+            width: 100%;
+            display: block;
+            
+        }
+    }
+}
+
+
+.facts-section {
+    
+    background-color: #EDEFF1;
+    padding: 20px;
+}
