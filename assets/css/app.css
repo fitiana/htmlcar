@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Gotham", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -55,7 +55,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Gotham", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6540,7 +6540,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Gotham", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6653,7 +6653,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Gotham", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10825,7 +10825,8 @@ a.text-dark:hover, a.text-dark:focus {
 .navigation-menu li a {
   color: #fff;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 300;
   text-transform: uppercase;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -10842,6 +10843,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .header-btn .btn-mespace {
   color: #fff;
+  font-weight: 300;
+  font-size: 14px;
   text-decoration: none;
   border: 1px solid #fff;
   border-radius: 30px;
@@ -10866,6 +10869,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .second-header .container .second-menu {
   height: 90px;
+}
+
+.second-header .header-logo span {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'Eurodatacar 230107';
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .second-header .hotline-btn {
@@ -10909,8 +10920,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: -50px;
 }
 
+.banner-content {
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .banner-content .banner-title {
   color: #000;
+  font-family: 'Eurodatacar 230107';
   text-transform: uppercase;
   max-width: 460px;
   display: inline-block;
@@ -10927,23 +10945,27 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   color: #fff;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 26px;
+  font-family: 'Eurodatacar 230107';
 }
 
 .brand-section {
   background-color: #EDEFF1;
   padding: 30px 0;
-  min-height: 185px;
+}
+
+.brand-section .brand_item img {
+  width: 100%;
 }
 
 .situation_section {
   background-color: #000;
-  padding: 20px 0;
+  padding: 15px 0;
   color: #fff;
 }
 
 .situation_section .content-box {
-  min-height: 135px;
+  min-height: 105px;
 }
 
 .situation_section .content-box p {
@@ -10961,6 +10983,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .block-title .sec_titles {
   text-transform: uppercase;
+  font-family: 'Eurodatacar 230107';
 }
 
 .marquage-section {
@@ -10984,6 +11007,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .marquage-section .marquage-item .overlay-box .title_text {
   text-transform: uppercase;
+  font-family: 'Eurodatacar 230107';
+  margin: 0;
 }
 
 .marquage-section .image-box img {
@@ -10996,9 +11021,27 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 20px;
 }
 
+.facts-section .facts-block .title_facts {
+  font-size: 18px;
+}
+
+.facts-section .facts-block p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
 /* Footer CSS */
 .site-footer {
   padding: 70px 0;
+}
+
+.footer-logo span {
+  color: #AAAAAA;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'Eurodatacar 230107';
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .footer-link ul li {
@@ -11007,7 +11050,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer-link ul li a {
   color: #000;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .copyright-wrap p {

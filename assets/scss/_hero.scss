@@ -7,9 +7,14 @@
 }
 
 .banner-content {
+        
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%; 
     
     .banner-title {
         color: $black_color;
+        font-family: 'Eurodatacar 230107';
         text-transform: uppercase;
         max-width: 460px;
         display: inline-block;
@@ -26,7 +31,8 @@
         text-transform: uppercase;
         color: $white_color;
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 26px;
+        font-family: 'Eurodatacar 230107';
         
     }
 }

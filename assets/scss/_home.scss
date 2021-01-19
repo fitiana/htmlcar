@@ -3,19 +3,26 @@
 .brand-section {
     background-color: #EDEFF1;
     padding: 30px 0;
-    min-height: 185px;
+    
+    .brand_item {
+        
+        img {
+            
+            width: 100%;
+        }
+    }
     
 }
 
 .situation_section {
     
     background-color: $black_color;
-    padding: 20px 0;
+    padding: 15px 0;
     color: $white_color;
     
     
     .content-box {
-        min-height: 135px;
+        min-height: 105px;
         
         p {
             margin-bottom: 0;
@@ -43,6 +50,7 @@
     .sec_titles {
         
         text-transform: uppercase;
+        font-family: 'Eurodatacar 230107';
     }
 }
 .marquage-section {
@@ -66,6 +74,8 @@
             
             .title_text {
                 text-transform: uppercase;
+                font-family: 'Eurodatacar 230107';
+                margin: 0;
                 
             }
         }
@@ -85,4 +95,17 @@
     
     background-color: #EDEFF1;
     padding: 20px;
+    
+    
+    .facts-block {
+        
+        .title_facts {
+            
+            font-size: 18px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 12px;
+        }
+    }
 }
