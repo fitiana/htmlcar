@@ -26,6 +26,7 @@
         
         p {
             margin-bottom: 0;
+            font-weight: 300;
         }
     }
     
@@ -68,6 +69,10 @@
     
     padding: 90px 0; 
     
+    .contact-item {
+        padding: 0 20px;
+    }
+    
     .image_item {
         
         img {
@@ -91,6 +96,31 @@
         p {
             font-weight: 300;
             font-size: 12px;
+            min-height: 104px;
+            margin: 0;
+        }
+    }
+    
+    
+    .contact_btn {
+        text-align: center;
+        
+        .b-btn-contact {
+            text-decoration: none;
+            font-weight: 300;
+            background-color: $black_color;
+            color: $white_color;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 30px;
+            
+            
+            
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 
