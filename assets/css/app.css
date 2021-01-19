@@ -10972,6 +10972,38 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 0;
 }
 
+.situation_section .data-hero-form {
+  position: relative;
+}
+
+.situation_section .data-hero-form .data-input {
+  border-radius: 34px;
+  background: #fff;
+  height: 36px;
+  padding: 2px 64px 2px 15px;
+}
+
+.situation_section .data-hero-form .data-input input {
+  border: 0;
+  width: 124px;
+  line-height: 34px;
+  height: 34px;
+  font-weight: 300;
+}
+
+.situation_section .data-hero-form .data-input input:focus {
+  outline: 0;
+}
+
+.situation_section .data-hero-form .data-btn {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
 .contact-section {
   padding: 90px 0;
 }
@@ -10981,9 +11013,25 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
 }
 
+.contact-section .item_title {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-section .inner-content p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
 .block-title .sec_titles {
   text-transform: uppercase;
   font-family: 'Eurodatacar 230107';
+}
+
+.block-title p {
+  font-weight: 300;
+  font-size: 12px;
 }
 
 .marquage-section {
@@ -11018,7 +11066,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .facts-section {
   background-color: #EDEFF1;
-  padding: 20px;
+  padding: 25px 0 10px 0;
+}
+
+.facts-section .facts-block {
+  max-width: 183px;
+  margin: 0 auto;
 }
 
 .facts-section .facts-block .title_facts {
@@ -11028,6 +11081,12 @@ a.text-dark:hover, a.text-dark:focus {
 .facts-section .facts-block p {
   font-weight: 300;
   font-size: 12px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.facts-section .facts-image {
+  margin-bottom: 20px;
 }
 
 /* Footer CSS */
@@ -11044,8 +11103,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 15px;
 }
 
+.footer-info p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
 .footer-link ul li {
   list-style: none;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .footer-link ul li a {
@@ -11056,4 +11122,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .copyright-wrap p {
   color: #707070;
+  font-size: 12px;
+  font-weight: 300;
 }

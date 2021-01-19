@@ -17,11 +17,22 @@
     }
 }
 
+
+.footer-info {
+    
+    p {
+        
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
 .footer-link {
     ul {
         li {
             
             list-style: none;
+            line-height: 1.2;
+            margin: 0;
             
             a {
                 color: $black_color;
@@ -36,5 +47,7 @@
 .copyright-wrap {
     p{
         color: #707070;
+        font-size: 12px;
+        font-weight: 300;
     }
 }

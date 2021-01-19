@@ -28,6 +28,41 @@
             margin-bottom: 0;
         }
     }
+    
+    
+    .data-hero-form {
+        position: relative;
+        
+        .data-input {
+            
+            border-radius: 34px;
+            background: $white_color;
+            height: 36px;
+            padding: 2px 64px 2px 15px;
+            
+            input {
+                border: 0;
+                width: 124px;
+                line-height: 34px;
+                height: 34px;
+                font-weight: 300;
+                
+                &:focus {
+                    
+                    outline: 0;
+                }
+            }
+        }
+        
+        .data-btn {
+            position: absolute;
+            top: 2px;
+            right: 4px;
+            border: 0;
+            padding: 0;
+            background: none;
+        }
+    }
 }
 .contact-section {
     
@@ -42,6 +77,22 @@
             
         }
     }
+    
+    .item_title {
+        
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .inner-content {
+        
+        
+        p {
+            font-weight: 300;
+            font-size: 12px;
+        }
+    }
 
 }
 
@@ -51,6 +102,11 @@
         
         text-transform: uppercase;
         font-family: 'Eurodatacar 230107';
+    }
+    p {
+        font-weight: 300;
+        font-size: 12px;
+        
     }
 }
 .marquage-section {
@@ -76,6 +132,7 @@
                 text-transform: uppercase;
                 font-family: 'Eurodatacar 230107';
                 margin: 0;
+            
                 
             }
         }
@@ -94,11 +151,12 @@
 .facts-section {
     
     background-color: #EDEFF1;
-    padding: 20px;
+    padding: 25px 0 10px 0;
     
     
     .facts-block {
-        
+        max-width: 183px;
+        margin: 0 auto;
         .title_facts {
             
             font-size: 18px;
@@ -106,6 +164,13 @@
         p {
             font-weight: 300;
             font-size: 12px;
+            line-height: 1.2;
+            margin: 0;
         }
+    }
+    
+    .facts-image {
+        
+        margin-bottom: 20px;
     }
 }
