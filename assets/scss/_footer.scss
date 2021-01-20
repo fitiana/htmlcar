@@ -22,8 +22,9 @@
     
     p {
         
-        font-size: 12px;
-        font-weight: 300;
+        font-family: 'Gotham Book';
+        font-weight: normal;
+        line-height: 24px;
     }
 }
 .footer-link {
@@ -36,8 +37,9 @@
             
             a {
                 color: $black_color;
-                font-size: 12px;
-                font-weight: 300;
+                font-family: 'Gotham Book';
+                font-weight: normal;
+                line-height: 24px;
             }
         }
     }
@@ -47,8 +49,8 @@
 .copyright-wrap {
     p{
         color: #707070;
-        font-size: 12px;
-        font-weight: 300;
+        font-family: 'Gotham Book';
+        font-weight: normal;
         
     }
 }
