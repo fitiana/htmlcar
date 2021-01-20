@@ -20,12 +20,14 @@ $("document").ready(function () {
     / 11. Fixed Header
     /----------------------------------------------------------*/
     $(window).on('scroll', function () {
-        if ($(window).scrollTop() > 40)
+        if ($(window).scrollTop() > 130)
         {
-            $(".head-sticky").addClass('fix-header animated slideInDown');
+            $(".head-sticky").addClass('fix-header');
+            $(".header-content").addClass('animated slideInDown');
         } else
         {
             $(".head-sticky").removeClass('fix-header animated slideInDown');
+            $(".header-content").removeClass('animated slideInDown');
         }
     });
 })(jQuery);

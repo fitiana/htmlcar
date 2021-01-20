@@ -2,17 +2,54 @@
 
 .header-site {
     position: relative;
+    padding-top: 108px;
+    background: $black_color;
     
     .header-top {
-        margin-top: -40px;
+        position: absolute;
+        width: 100%;
+        top: 65px;
     }
+}
+
+ .logo_normal {
+        
+        display: none;
+}
+
+.fix-header {
+    
+    
+    
+    .header-content {
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: -1px;
+        width: 100%;
+        z-index: 99;
+        padding: 10px 0 10px;
+        transition: all 0.1s ease-out;
+    }
+    
+    .logo_normal {
+        
+        display: block;
+    }
+    
+    
 }
 .header-content {
     background: $black_color;
-    padding: 20px 0 60px;
-    min-height: 90px;
+    padding: 20px 0 20px;
     display: flex;
     align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+   
 }
 
 .navigation-menu {
