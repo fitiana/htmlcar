@@ -11025,8 +11025,9 @@ a.text-dark:hover, a.text-dark:focus {
 .situation_section .data-hero-form .data-input {
   border-radius: 34px;
   background: #fff;
-  height: 36px;
-  padding: 2px 64px 2px 15px;
+  height: 46px;
+  width: 237px;
+  padding: 5px 64px 5px 20px;
 }
 
 .situation_section .data-hero-form .data-input input {
@@ -11034,7 +11035,10 @@ a.text-dark:hover, a.text-dark:focus {
   width: 124px;
   line-height: 34px;
   height: 34px;
-  font-weight: 300;
+  font-family: 'Gotham Book';
+  font-weight: normal;
+  font-size: 20px;
+  color: #000;
 }
 
 .situation_section .data-hero-form .data-input input:focus {
@@ -11043,7 +11047,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .situation_section .data-hero-form .data-btn {
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: 4px;
   border: 0;
   padding: 0;
@@ -11095,10 +11099,35 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 10px;
   border-radius: 30px;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-section .contact_btn .b-btn-contact:hover {
   text-decoration: none;
+  color: #E7F703;
+}
+
+.contact-section .btn-group {
+  font-weight: bold;
+  font-family: 'Gotham';
+  background-color: #000;
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 44px;
+}
+
+.contact-section .btn-group span {
+  border-left: 1px solid #8F8F8F;
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  margin-left: 20px;
 }
 
 .contact-section .contact-bottom {
@@ -11141,18 +11170,41 @@ a.text-dark:hover, a.text-dark:focus {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .marquage-section .marquage-item .overlay-box .title_text {
   text-transform: uppercase;
   font-family: 'Eurodatacar 230107';
+  color: #000;
   margin: 0;
   font-size: 42px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.marquage-section .image-box img {
+.marquage-section .marquage-item .image-box img {
   width: 100%;
   display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.marquage-section .marquage-item:hover {
+  cursor: pointer;
+}
+
+.marquage-section .marquage-item:hover .overlay-box {
+  background-color: #000;
+}
+
+.marquage-section .marquage-item:hover .overlay-box .title_text {
+  color: #E7F703;
+}
+
+.marquage-section .marquage-item:hover .image-box img {
+  opacity: 0.6;
 }
 
 .facts-section {
@@ -11168,6 +11220,8 @@ a.text-dark:hover, a.text-dark:focus {
 .facts-section .facts-block .title_facts {
   font-size: 22px;
   font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
 
 .facts-section .facts-block p {
@@ -11175,6 +11229,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 13px;
   line-height: 15px;
   margin: 0;
+}
+
+.facts-section .facts-block p span {
+  font-size: 9px;
 }
 
 .facts-section .facts-image {

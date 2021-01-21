@@ -3623,3 +3623,17 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+
+.data-input input[type="text"]::-moz-placeholder{
+    color: #000000;
+    opacity: 1;
+}
+.data-input input[type="text"]::-ms-input-placeholder{
+    color: #000000;
+    opacity: 1;
+}
+.data-input input[type="text"]::-webkit-input-placeholder{
+    color: #000000;
+    opacity: 1;
+}
