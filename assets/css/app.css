@@ -10789,6 +10789,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.site-wrapper .container-fluid, .site-wrapper .container-sm, .site-wrapper .container-md, .site-wrapper .container-lg, .site-wrapper .container-xl {
+  max-width: 1240px;
+}
+
 /* Header CSS */
 .header-site {
   position: relative;
@@ -10894,11 +10898,11 @@ a.text-dark:hover, a.text-dark:focus {
           align-items: center;
 }
 
-.second-header .container {
+.second-header .custom-container {
   background: #E7F703;
 }
 
-.second-header .container .second-menu {
+.second-header .custom-container .second-menu {
   height: 90px;
 }
 
@@ -11212,6 +11216,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .copyright-wrap p {
   color: #707070;
+  font-size: 13px;
   font-family: 'Gotham Book';
   font-weight: normal;
 }
