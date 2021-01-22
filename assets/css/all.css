@@ -3637,3 +3637,15 @@
     color: #000000;
     opacity: 1;
 }
+
+.mobile-menu-visible .hamburger-menu .menu-line-1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+.mobile-menu-visible .hamburger-menu .menu-line-3 {
+    -webkit-transform: rotate(45deg) translate(-8px,-7px);
+    transform: rotate(45deg) translate(-8px,-7px);
+}
+.mobile-menu-visible .hamburger-menu .menu-line-2 {
+    opacity: 0;
+}

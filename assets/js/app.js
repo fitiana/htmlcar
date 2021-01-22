@@ -30,4 +30,10 @@ $("document").ready(function () {
             $(".header-content").removeClass('animated slideInDown');
         }
     });
+    
+    $('.hamburger-menu').on('click', function() {
+			$('body').toggleClass('mobile-menu-visible');
+            $( this ).toggleClass('active')
+		});
+    
 })(jQuery);
