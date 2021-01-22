@@ -3,8 +3,14 @@
 .brand-section {
     background-color: #EDEFF1;
     padding: 30px 0;
+    
+    .container-fluid  {
+        max-width: 980px;
+    }
 
     .brand_item {
+        
+        padding: 15px;
 
         img {
 

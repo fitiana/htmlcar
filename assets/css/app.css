@@ -10793,6 +10793,14 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 1240px;
 }
 
+.page_banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
+  padding: 30px 0;
+}
+
 /* Header CSS */
 .header-site {
   position: relative;
@@ -10951,6 +10959,45 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 
+.mobile-header {
+  background: #E7F703;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.mobile-header .header-wrapper {
+  padding: 15px;
+  position: relative;
+}
+
+.mobile-header .header-wrapper .mobile-nav-toggler {
+  background: #000;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.mobile-header .hamburger-menu {
+  cursor: pointer;
+}
+
+.mobile-header .hamburger-menu .menu-line {
+  height: 2px;
+  width: 30px;
+  margin: 6px auto;
+  display: block;
+  background-color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .single-hero {
   background-position: center;
   background-repeat: no-repeat;
@@ -10997,6 +11044,14 @@ a.text-dark:hover, a.text-dark:focus {
 .brand-section {
   background-color: #EDEFF1;
   padding: 30px 0;
+}
+
+.brand-section .container-fluid, .brand-section .container-sm, .brand-section .container-md, .brand-section .container-lg, .brand-section .container-xl {
+  max-width: 980px;
+}
+
+.brand-section .brand_item {
+  padding: 15px;
 }
 
 .brand-section .brand_item img {

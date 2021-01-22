@@ -163,3 +163,49 @@
 
     }
 }
+
+
+.mobile-header {
+    
+    background: $primary-color;
+    
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    
+    
+    .header-wrapper {
+        
+        padding: 15px;
+        position: relative;
+        
+        .mobile-nav-toggler {
+        
+            background: $black_color;
+            width: 100px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    
+    
+    .hamburger-menu {
+        cursor: pointer;
+        .menu-line {
+            height: 2px;
+            width: 30px;
+            margin: 6px auto;
+            display: block;
+            background-color: $white_color;
+            transition: all .3s ease;
+        }
+    }
+    
+    
+}
