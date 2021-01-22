@@ -42,7 +42,7 @@
     
 }
 .header-content {
-    background: $black_color;
+    background: $dark_color;
     padding: 20px 0 20px;
     display: flex;
     align-items: center;
@@ -231,17 +231,35 @@
     right: 100%;
     width: 100vw;
     z-index: 9999;
-    background: $white_color;
+    background: $dark_color;
     transition: all .4s ease;
     
     
     .mobile-nav_container {
-        
+        height: 100%;
         
         .navigation-mobile {
             
             list-style:none;
             padding: 0;
+            
+            li {
+                text-align: center;
+                margin-bottom: 15px;
+                
+                a {
+                    
+                    color: $white_color;
+                    text-transform: uppercase;
+                    transition: all .3s ease;
+                     &:hover {
+            
+                            text-decoration: none;
+                            color: $primary-color;
+                        }
+                }
+            
+            }
         }
     }
 }
