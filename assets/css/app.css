@@ -11342,6 +11342,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 500;
   line-height: 25px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .facts-section .facts-block p {
@@ -11401,4 +11402,35 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 13px;
   font-family: 'Gotham Book';
   font-weight: normal;
+}
+
+@media only screen and (max-width: 576px) {
+  .facts-section {
+    background-color: #EDEFF1;
+    padding: 25px 0 0px 0;
+  }
+  .facts-section .facts-block {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .facts-section .facts-block .title_facts {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .facts-section .facts-block p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+  }
+  .facts-section .facts-block p span {
+    font-size: 9px;
+  }
+  .facts-section .facts-image {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
 }
