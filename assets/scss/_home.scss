@@ -164,7 +164,7 @@
             font-size: 24px;
             border-left: 1px solid #8F8F8F;
             display: inline-block;
-            padding: 2px 0 2px 45px; 
+            padding: 2px 0 2px 40px; 
             margin-left: 20px;
             background-image: url(../img/phone.png);
             background-repeat: no-repeat;
@@ -211,8 +211,8 @@
         .overlay-box {
 
             position: absolute;
-            background-color: $primary-color;
-            padding: 5px 0;
+            
+            
             left: 12px;
             right: 12px;
             top: 50%;
@@ -223,12 +223,26 @@
             .title_text {
                 text-transform: uppercase;
                 font-family: 'Eurodatacar 230107';
+                background-color: $primary-color;
                 color: $black_color;
+                padding: 8px 0 6px 0;
                 margin: 0;
                 font-size: 42px;
+                line-height: 42px;
                 transition: all 0.3s ease;
 
 
+            }
+            p {
+              position: absolute;
+                font-size: 28px;
+                color: $white_color;
+                font-weight: normal;
+                font-family: 'Gotham Book';
+                bottom: -65px;
+                width: 100%;
+                text-align: center;
+                
             }
         }
 
@@ -248,11 +262,11 @@
 
             .overlay-box {
 
-                background-color: $black_color;
 
 
                 .title_text {
                     color: $primary-color;
+                    background-color: $black_color;
 
                 }
             }

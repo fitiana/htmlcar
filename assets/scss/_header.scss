@@ -75,14 +75,39 @@
             color: $white_color;
             display: block;
             font-size: 13px;
+            line-height: 15px;
+            padding: 4px 2px;
             font-family: 'Gotham Book';
             font-weight: normal;
             text-transform: uppercase;
+            position: relative;
             @include transition();
+            
+            &:after{
+                height: 1px;
+                width: 100%;
+                background-color: $primary-color;
+                display: inline-block;
+                content: ""; 
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+                opacity: 0;
+                @include transition();
+                
+                    
+            }
 
             &:hover {
                 color: $primary-color;
                 text-decoration: none;
+                
+                &:after{
+                 
+                    opacity: 1;
+
+                }
             }
         }
     }
@@ -104,6 +129,14 @@
         background-image: url(../img/lock.png);
         background-repeat: no-repeat;
         background-position:  15px center;
+        @include transition();
+        
+         &:hover {
+                color: $primary-color;
+                
+                
+            }
+        
     }
 }
 
