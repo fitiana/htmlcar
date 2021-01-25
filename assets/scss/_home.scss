@@ -140,6 +140,10 @@
                 text-decoration: none;
                 color: $primary-color;
             }
+            
+            i {
+                margin-right: 20px;
+            }
         }
     }
     .btn-group {
@@ -157,10 +161,15 @@
         height: 44px;
         
         span {
+            font-size: 24px;
             border-left: 1px solid #8F8F8F;
             display: inline-block;
-            padding: 10px 0 10px 15px; 
+            padding: 2px 0 2px 45px; 
             margin-left: 20px;
+            background-image: url(../img/phone.png);
+            background-repeat: no-repeat;
+            background-position:  15px center;
+            background-size: 20px;
         }
         
     }

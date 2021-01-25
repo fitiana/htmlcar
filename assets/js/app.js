@@ -36,4 +36,37 @@ $("document").ready(function () {
             $( this ).toggleClass('active')
 		});
     
+    // marquage-slider
+  $('.marquage-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    loop: true,
+    autoplay: true,
+    speed: 400,
+     
+    cssEase: 'linear',
+   
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        centerMode: true,
+        centerPadding: '40px',
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        dots: false,
+        slidesToShow: 1,
+          centerMode: true,
+        centerPadding: '60px',
+      }
+    }]
+  });
+    
 })(jQuery);

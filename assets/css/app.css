@@ -10956,12 +10956,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .second-header .btn-hotline span {
   display: inline-block;
-  padding: 4px 15px;
+  padding: 4px 15px 4px 45px;
   background-color: #000;
   color: #fff;
   border-radius: 0 30px 30px 0;
   margin-left: 12px;
   font-size: 24px;
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 20px;
 }
 
 .second-header .btn-hotline:hover {
@@ -11215,6 +11219,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #E7F703;
 }
 
+.contact-section .contact_btn .b-btn-contact i {
+  margin-right: 20px;
+}
+
 .contact-section .btn-group {
   font-weight: bold;
   font-family: 'Gotham';
@@ -11231,10 +11239,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .contact-section .btn-group span {
+  font-size: 24px;
   border-left: 1px solid #8F8F8F;
   display: inline-block;
-  padding: 10px 0 10px 15px;
+  padding: 2px 0 2px 45px;
   margin-left: 20px;
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 20px;
 }
 
 .contact-section .contact-bottom {
