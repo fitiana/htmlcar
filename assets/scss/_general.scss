@@ -3,5 +3,11 @@
 .site-wrapper {
     .container-fluid {
         max-width: 1240px;
+        
+        img {
+            max-width: 100%;
+            width: 100%;
+        } 
+        
     }
 }
