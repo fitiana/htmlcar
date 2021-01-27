@@ -10793,9 +10793,11 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 1240px;
 }
 
-.site-wrapper .container-fluid img, .site-wrapper .container-sm img, .site-wrapper .container-md img, .site-wrapper .container-lg img, .site-wrapper .container-xl img {
+img {
   max-width: 100%;
   width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .page_banner {
@@ -10803,7 +10805,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-size: cover;
   height: 420px;
-  padding: 30px 0;
+  padding: 60px 0 30px 0;
 }
 
 .page_banner .page-title {
@@ -10816,10 +10818,18 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 42px;
   line-height: 1;
   padding: 10px 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.about-section {
+.page_banner p {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Gotham Book';
+  font-weight: normal;
+}
+
+.sec-padding {
   padding-top: 90px;
   padding-bottom: 80px;
 }
@@ -10842,6 +10852,29 @@ a.text-dark:hover, a.text-dark:focus {
 .about-section .about-content p strong {
   font-family: 'Gotham';
   font-weight: 500;
+}
+
+.partenariats-sec {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.partenariats-sec .about-title {
+  color: #000;
+  font-family: 'Eurodatacar 230107';
+  text-transform: uppercase;
+  font-size: 37px;
+  line-height: 44px;
+  margin-bottom: 30px;
+}
+
+.partenariats-sec .partenariat-item {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 36px 37px 32px rgba(37, 37, 37, 0.1);
+          box-shadow: 0px 36px 37px 32px rgba(37, 37, 37, 0.1);
+  padding: 30px;
+  height: 262px;
+  margin-bottom: 30px;
 }
 
 /* Header CSS */
@@ -11151,7 +11184,14 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 20px;
 }
 
-.banner-content .banner-title span {
+.banner-content .banner-title .span-t1 {
+  display: inline-block;
+  padding: 12px 20px 0 20px;
+  line-height: 1;
+  background-color: #E7F703;
+}
+
+.banner-content .banner-title .span-t2 {
   display: inline-block;
   padding: 12px 20px 10px 20px;
   line-height: 1;
@@ -11202,6 +11242,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .situation_section .data-hero-form {
   position: relative;
+  max-width: 237px;
 }
 
 .situation_section .data-hero-form .data-input {
@@ -11329,7 +11370,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .block-title {
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .block-title .sec_titles {
@@ -11489,7 +11530,56 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
 }
 
+@media only screen and (max-width: 767px) {
+  .banner-content {
+    padding: 0px 15px 20px 15px;
+  }
+  .banner-content .banner-title {
+    max-width: 500px;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  .banner-content .banner-title .span-t1 {
+    padding: 12px 20px 0 20px;
+  }
+  .banner-content .banner-title .span-t2 {
+    padding: 0 20px 10px 20px;
+  }
+  .banner-content p {
+    font-size: 36px;
+    line-height: 1.1;
+    padding-left: 15px;
+  }
+  .contact-section {
+    padding: 60px 0;
+  }
+  .block-title {
+    margin-bottom: 30px;
+  }
+  .block-title .sec_titles {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .marquage-section {
+    padding: 0px 0 60px 0;
+  }
+  .marquage-section .marquage-item {
+    position: relative;
+  }
+  .marquage-section .marquage-item .overlay-box .title_text {
+    padding: 8px 0 6px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
+  .header-logo .logo-2 {
+    max-width: 240px;
+  }
   .facts-section {
     background-color: #EDEFF1;
     padding: 25px 0 0px 0;

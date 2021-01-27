@@ -2,12 +2,13 @@
 
 .site-wrapper {
     .container-fluid {
-        max-width: 1240px;
-        
-        img {
-            max-width: 100%;
-            width: 100%;
-        } 
+        max-width: 1240px; 
         
     }
+}
+
+img {
+        max-width: 100%;
+        width: 100%;
+       transition: all .3s ease;
 }

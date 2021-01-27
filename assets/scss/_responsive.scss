@@ -11,7 +11,109 @@ $breakpoint-xs: 'only screen and (max-width:767px)';
 $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767px)';
 
 
+
+@media only screen and (max-width: 767px) {
+    .banner-content {
+
+        padding: 0px 15px 20px 15px;
+
+        .banner-title {
+
+            max-width: 500px;
+            display: inline-block;
+            font-size: 36px;
+            line-height: 1;
+            margin-bottom: 15px;
+
+            .span-t1 {
+
+                padding: 12px 20px 0 20px;
+
+            }
+
+            .span-t2 {
+
+                padding: 0 20px 10px 20px;
+
+            }
+        }
+
+        p {
+
+            font-size: 36px;
+            line-height: 1.1;
+            padding-left: 15px;
+
+
+        }
+    }
+
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+
+    .block-title {
+
+        margin-bottom: 30px;
+
+        .sec_titles {
+
+            font-size: 36px;
+            line-height: 36px;
+            margin-bottom: 10px;
+        }
+
+
+    }
+
+    .marquage-section {
+
+        padding: 0px 0 60px 0;
+
+        .marquage-item {
+
+            position: relative;
+
+            .overlay-box {
+
+
+
+                .title_text {
+
+                    padding: 8px 0 6px 0;
+
+                    font-size: 36px;
+                    line-height: 36px;
+
+
+
+                }
+
+            }
+
+
+
+
+        }
+
+
+    }
+
+}
+
+
 @media only screen and (max-width: 576px) {
+
+
+    .header-logo {
+
+        .logo-2 {
+
+            max-width: 240px;
+        }
+    }
 
     .facts-section {
 
