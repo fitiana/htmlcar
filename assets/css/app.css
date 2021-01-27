@@ -10834,22 +10834,23 @@ img {
   padding-bottom: 80px;
 }
 
-.about-section .about-title {
+.site-section .about-title {
   color: #000;
   font-family: 'Eurodatacar 230107';
+  text-transform: uppercase;
   font-size: 42px;
   line-height: 50px;
   margin-bottom: 30px;
 }
 
-.about-section .about-content p {
+.site-section .about-content p {
   font-size: 16px;
   font-family: 'Gotham Book';
   line-height: 24px;
   font-weight: normal;
 }
 
-.about-section .about-content p strong {
+.site-section .about-content p strong {
   font-family: 'Gotham';
   font-weight: 500;
 }
@@ -11573,6 +11574,14 @@ img {
     padding: 8px 0 6px 0;
     font-size: 36px;
     line-height: 36px;
+  }
+  .sec-padding {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .about-section .about-title {
+    font-size: 37px;
+    line-height: 44px;
   }
 }
 
