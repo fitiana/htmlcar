@@ -2,3 +2,32 @@
     
     @include border-radius(4px);
 }
+
+
+.historique-slide {
+    max-width: 680px;
+    margin: 0 auto;
+    .historique-item {
+        
+        text-align: center;
+        
+        .slide-img {
+            max-width: 480px;
+            padding: 20px;
+            margin: 20px auto;
+            img {
+                
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        
+        .historique-details {
+            display: inline-block;
+            font-size: 32px;
+            background-color: $primary-color;
+            color: $black_color;
+            padding: 2px 4px ;
+        }
+    }
+}
