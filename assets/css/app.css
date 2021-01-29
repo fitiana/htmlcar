@@ -10899,11 +10899,25 @@ img {
   line-height: 22px;
   font-weight: 500;
   font-size: 20px;
-  min-height: 130px;
+  min-height: 120px;
 }
 
 .adn-section .co_content p strong {
   font-weight: bold;
+}
+
+.adn-section .adn-content {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto 60px;
+}
+
+.adn-section .adn-content .sec-title {
+  margin-bottom: 60px;
+}
+
+.adn-section .adn-content .sec-title p {
+  margin-bottom: 25px;
 }
 
 .historique-content .historique-title {
@@ -11600,6 +11614,17 @@ img {
 .historique-slide .historique-item p {
   line-height: 25px;
   font-size: 16px;
+}
+
+.historique-slide .slide-button {
+  position: absolute;
+  right: 15px;
+  top: 46%;
+}
+
+.historique-slide .slide-button i {
+  color: #EEEEEE;
+  font-size: 36px;
 }
 
 /* Footer CSS */
