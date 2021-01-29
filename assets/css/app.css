@@ -11780,15 +11780,18 @@ img {
     margin-right: 12px;
   }
   .marquage-section {
-    padding: 0px 0 60px 0;
+    padding: 60px 0 40px 0;
   }
   .marquage-section .marquage-item .overlay-box .title_text {
     padding: 8px 0 6px 0;
-    font-size: 22px;
+    font-size: 28px;
     line-height: 24px;
   }
+  .marquage-section .slick-slide {
+    padding: 0 !important;
+  }
   .contact-section {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
   .contact-section .contact-item {
     padding: 0 15px 20px;

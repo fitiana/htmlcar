@@ -219,7 +219,7 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
     .marquage-section {
 
-        padding: 0px 0 60px 0;
+        padding: 60px 0 40px 0;
 
         .marquage-item {
 
@@ -232,7 +232,7 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
                     padding: 8px 0 6px 0;
 
-                    font-size: 22px;
+                    font-size: 28px;
                     line-height: 24px;
 
 
@@ -245,6 +245,10 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
 
         }
+        
+        .slick-slide {
+                padding: 0 !important;
+            }
 
 
     }
@@ -253,7 +257,7 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
     .contact-section {
 
-        padding: 60px 0;
+        padding: 60px 0 0 0;
         
         
         .contact-item {
