@@ -36,6 +36,15 @@ $("document").ready(function () {
             $( this ).toggleClass('active')
 		});
     
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        $('html, body').animate({scrollTop:(target.offset().top-8)},1200,"easeInOutExpo");
+        $('body').toggleClass('mobile-menu-visible');
+        event.preventDefault();
+    });
+    
     // marquage-slider
   $('.marquage-slider').slick({
     slidesToShow: 3,
