@@ -118,7 +118,7 @@
             line-height: 22px;
             font-weight: 500;
             font-size: 20px;
-            min-height: 96px;
+            min-height: 130px;
             
             strong {
                 font-weight: bold;
@@ -135,5 +135,51 @@
         font-weight: normal;
         line-height: 46px;
         margin-bottom: 60px;
+    }
+}
+
+
+.section-content {
+    padding-top: 110px;
+    padding-bottom: 80px;
+    .sec-title {
+        margin-bottom: 60px;
+        text-align: center;
+        .title-container {
+            display: inline-block;
+            font-family: 'Eurodatacar 230107';
+            text-transform: uppercase;
+            font-size: 42px;
+            line-height: 50px;
+            background-color: $primary-color;
+            color: $black_color;
+            padding: 2px 8px ;
+            
+        }
+    }
+    
+    .wrapper-content {
+        max-width: 1024px;
+        width: 100%;
+        margin: auto;
+        
+        p {
+            font-size: 22px;
+            font-family: 'Gotham Book';
+            font-weight: normal;
+            line-height: 25px;
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            
+            font-size: 22px;
+            font-weight: 500;
+             margin-bottom: 25px;
+        }
+        
+        .wrapper-box {
+            margin-bottom: 45px;
+        }
     }
 }

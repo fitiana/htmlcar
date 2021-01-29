@@ -13,6 +13,10 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
 
 @media only screen and (max-width: 767px) {
+
+
+
+
     .banner-content {
 
         padding: 0px 15px 20px 15px;
@@ -107,18 +111,34 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
         padding-bottom: 30px;
 
     }
-    
+
     .about-section {
 
 
         .about-title {
-    
+
             font-size: 37px;
             line-height: 44px;
-            
+
 
         }
     }
+
+
+    .page_banner {
+
+        height: 328px;
+
+        .page-title {
+
+            font-size: 37px;
+            line-height: 44px;
+            padding: 10px 20px;
+
+        }
+    }
+
+
 
 }
 
@@ -130,8 +150,32 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
         .logo-2 {
 
-            max-width: 240px;
+            max-width: 210px;
         }
+    }
+
+    .mobile-header {
+
+
+        .header-wrapper {
+
+            padding: 0;
+
+
+            .mobile-nav-toggler {
+
+
+                width: 74px;
+
+            }
+        }
+    }
+
+
+
+    .offcanvas-content {
+
+        top: 58px;
     }
 
     .facts-section {
@@ -171,5 +215,71 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
             margin-right: 12px;
         }
     }
+
+
+    .marquage-section {
+
+        padding: 0px 0 60px 0;
+
+        .marquage-item {
+
+
+            .overlay-box {
+
+
+
+                .title_text {
+
+                    padding: 8px 0 6px 0;
+
+                    font-size: 22px;
+                    line-height: 24px;
+
+
+
+                }
+
+            }
+
+
+
+
+        }
+
+
+    }
+
+
+
+    .contact-section {
+
+        padding: 60px 0;
+        
+        
+        .contact-item {
+            padding: 0 15px 20px;
+            
+        }
+
+
+
+        .btn-group {
+
+            height: 44px;
+            font-size: 14px;
+
+            span {
+                font-size: 18px;
+                padding: 2px 0 2px 30px;
+                margin-left: 15px;
+                background-position: 9px center;
+                background-size: 20px;
+            }
+
+        }
+
+
+    }
+
 
 }

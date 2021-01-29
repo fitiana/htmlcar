@@ -10899,7 +10899,7 @@ img {
   line-height: 22px;
   font-weight: 500;
   font-size: 20px;
-  min-height: 96px;
+  min-height: 130px;
 }
 
 .adn-section .co_content p strong {
@@ -10912,6 +10912,51 @@ img {
   font-weight: normal;
   line-height: 46px;
   margin-bottom: 60px;
+}
+
+.section-content {
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
+.section-content .sec-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-content .sec-title .title-container {
+  display: inline-block;
+  font-family: 'Eurodatacar 230107';
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 50px;
+  background-color: #E7F703;
+  color: #000;
+  padding: 2px 8px;
+}
+
+.section-content .wrapper-content {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+.section-content .wrapper-content p {
+  font-size: 22px;
+  font-family: 'Gotham Book';
+  font-weight: normal;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.section-content .wrapper-content h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.section-content .wrapper-content .wrapper-box {
+  margin-bottom: 45px;
 }
 
 /* Header CSS */
@@ -11385,6 +11430,7 @@ img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 44px;
+  font-size: 16px;
 }
 
 .contact-section .btn-group span {
@@ -11525,6 +11571,7 @@ img {
 .historique-slide {
   max-width: 680px;
   margin: 0 auto;
+  position: relative;
 }
 
 .historique-slide .historique-item {
@@ -11548,6 +11595,11 @@ img {
   background-color: #E7F703;
   color: #000;
   padding: 2px 4px;
+}
+
+.historique-slide .historique-item p {
+  line-height: 25px;
+  font-size: 16px;
 }
 
 /* Footer CSS */
@@ -11651,11 +11703,28 @@ img {
     font-size: 37px;
     line-height: 44px;
   }
+  .page_banner {
+    height: 328px;
+  }
+  .page_banner .page-title {
+    font-size: 37px;
+    line-height: 44px;
+    padding: 10px 20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .header-logo .logo-2 {
-    max-width: 240px;
+    max-width: 210px;
+  }
+  .mobile-header .header-wrapper {
+    padding: 0;
+  }
+  .mobile-header .header-wrapper .mobile-nav-toggler {
+    width: 74px;
+  }
+  .offcanvas-content {
+    top: 58px;
   }
   .facts-section {
     background-color: #EDEFF1;
@@ -11684,5 +11753,30 @@ img {
   .facts-section .facts-image {
     margin-bottom: 0;
     margin-right: 12px;
+  }
+  .marquage-section {
+    padding: 0px 0 60px 0;
+  }
+  .marquage-section .marquage-item .overlay-box .title_text {
+    padding: 8px 0 6px 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .contact-section {
+    padding: 60px 0;
+  }
+  .contact-section .contact-item {
+    padding: 0 15px 20px;
+  }
+  .contact-section .btn-group {
+    height: 44px;
+    font-size: 14px;
+  }
+  .contact-section .btn-group span {
+    font-size: 18px;
+    padding: 2px 0 2px 30px;
+    margin-left: 15px;
+    background-position: 9px center;
+    background-size: 20px;
   }
 }

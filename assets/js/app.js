@@ -64,7 +64,7 @@ $("document").ready(function () {
         dots: false,
         slidesToShow: 1,
           centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '20px',
       }
     }]
   });
