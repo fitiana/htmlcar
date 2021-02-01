@@ -19,7 +19,7 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
 
     .banner-content {
 
-        padding: 0px 15px 20px 15px;
+        padding: 0px 5px 15px 5px;
 
         .banner-title {
 
@@ -139,6 +139,22 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
     }
 
 
+    .section-content {
+        padding-top: 90px;
+        padding-bottom: 30px;
+        .sec-title {
+            margin-bottom: 35px;
+            .title-container {
+
+                font-size: 37px;
+                line-height: 42px;
+
+                padding: 2px 8px ;
+
+            }
+        }
+    
+    }
 
 }
 
@@ -273,7 +289,7 @@ $breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767p
             font-size: 14px;
 
             span {
-                font-size: 18px;
+                font-size: 17px;
                 padding: 2px 0 2px 30px;
                 margin-left: 15px;
                 background-position: 9px center;

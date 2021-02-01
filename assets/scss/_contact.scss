@@ -1,0 +1,104 @@
+/* contact CSS */
+
+.contact-page-form {
+
+    max-width: 510px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EDEFF1;
+   
+
+    .contact-header {
+
+        background-color: $primary-color;
+        padding: 20px 15px;
+        text-align: left;
+        
+    }
+
+
+}
+
+.inner-contact {
+    margin: 0 auto;
+    padding: 25px 8% 40px 8%;
+    .contact-title {
+        margin-bottom: 15px;
+
+        .card_title {
+
+            font-size: 28px;
+            font-family: 'Gotham Book';
+            font-weight: normal;
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+.form-inner {
+
+    .form_group {
+
+        position: relative;
+        margin-bottom: 5px;
+
+        .label-input {
+
+            position: absolute;
+            color: #AAAAAA;
+            font-size: 16px;
+            display: inline-block;
+            left: 20px;
+            top: 15px;
+            font-family: 'Gotham Book';
+            font-weight: normal;
+            
+        }
+
+        .form-input {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: 1px solid $white_color;
+            border-radius: 5px;
+            background-color: $white_color;
+            padding: 20px 20px;
+            font-family: 'Gotham Book';
+            font-weight: normal;
+            color: #AAAAAA;
+            font-size: 16px;
+        }
+    }
+    
+    .form_btn {
+        
+        text-align: center;
+        
+        .contact-btn {
+            background-color: $black_color;
+            color: $white_color;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            border: 0;
+            width: 237px;
+            height: 52px;
+            text-align: center;
+             border-radius: 26px;
+        }
+    }
+    
+    .form-footer {
+        
+        p {
+            color: #AAAAAA;
+            font-size: 13px;
+            font-family: 'Gotham Book';
+            font-weight: normal;
+        }
+    }
+}
