@@ -154,62 +154,7 @@
 
         </section>
 
-        <section class="contact-card">
-            <div class="contact-page-form">
-                <div class="contact-header">
-                    <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
-                </div>
-
-                <div class="inner-contact">
-                    <div class="contact-title">
-                        <h3 class="card_title text-center">Être rappelé</h3>
-                    </div>
-                    <div class="form-inner">
-                        <form method="post" action="" id="contact-form">
-
-
-                            <div class="form_group">
-
-                                <label class="label-input">Nom* N° de contrat* </label>
-                                <input class="form-input" id="form-1-name" type="text" name="name">
-                            </div>
-                            <div class="form_group">
-
-                                <label class="label-input">Prénom </label>
-                                <input class="form-input" id="form-1-last-name" type="text" name="last-name">
-                            </div>
-
-                            <div class="form_group">
-
-                                <label class="label-input">N° de tel* </label>
-                                <input class="form-input" id="form-1-tel" type="text" name="phone">
-                            </div>
-                            <div class="form_group">
-
-                                <label class="label-input">N° de contrat* </label>
-                                <input class="form-input" id="form-1-contrat" type="text" name="contrat">
-                            </div>
-                            <div class="form_group">
-
-                                <label class="label-input">Message :</label>
-                                <input class="form-input" id="form-1-message" type="text" name="message">
-                            </div>
-                            <div class="form-footer text-left">
-                                <p>* champs obligatoires</p>
-                            </div>
-                            
-                            <div class="form_btn  text-center">
-                                <button class="contact-btn text-center">
-                                    Valider
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
+        
 
         <section id="contact" class="contact-section">
             <div class="container-fluid">
@@ -271,7 +216,7 @@
                                 <p>Vous souhaitez être recontacté ? Merci de nous indiquer votre numéro de téléphone et votre numéro de contrat, nous vous rappelons dans les plus brefs délais.</p>
                             </div>
                             <div class="contact_btn mb-3">
-                                <a class="b-btn-contact" href="#">Me recontacter</a>
+                                <a class="b-btn-contact contact-box-btn" href="javascript:void(0)">Me recontacter</a>
                             </div>
                             <p class="contact-bottom text-center mb-0">&nbsp;</p>
                         </div>
@@ -427,6 +372,62 @@
                 </div>
             </div>
         </footer>
+        <section  id="contact-popup" class="contact-popup contact-card">
+            <div class="contact-page-form">
+                <div class="contact-header">
+                    <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
+                </div>
+
+                <div class="inner-contact">
+                    <div class="contact-title">
+                        <h3 class="card_title text-center">Être rappelé</h3>
+                    </div>
+                    <div class="form-inner">
+                        <form method="post" action="" id="contact-form">
+
+
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-name">Nom* N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-1-name" type="text" name="name">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-last-name">Prénom </label>
+                                <input class="form-input contact-form_input" id="form-1-last-name" type="text" name="last-name">
+                            </div>
+
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-tel">N° de tel* </label>
+                                <input class="form-input contact-form_input" id="form-1-tel" type="text" name="phone">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-contrat">N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-1-contrat" type="text" name="contrat">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-message">Message :</label>
+                                <textarea rows="5"  class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
+                            </div>
+                            <div class="form-footer text-left">
+                                <p>* champs obligatoires</p>
+                            </div>
+                            
+                            <div class="form_btn  text-center">
+                                <button class="contact-btn text-center">
+                                    Valider
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
 
     </div>
 

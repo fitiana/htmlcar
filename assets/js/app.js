@@ -53,6 +53,36 @@ $("document").ready(function () {
         event.preventDefault();
     });
     
+    /***** Contact Input Animation *******/
+
+	$('.contact-form_input').on('change paste keyup', function (e) {
+		const val = $(this).val();
+
+		if (val) {
+			$(this).parent().addClass('has-value')
+		} else {
+			$(this).parent().removeClass('has-value')
+		}
+	})
+    
+    
+    //Contact Popup
+	if($('.contact-box-btn').length){
+		
+		//Show Popup
+		$('.contact-box-btn').on('click', function() {
+			$('.contact-popup').addClass('popup-visible');
+            $('body').addClass('body-overlay');
+            
+            e.preventDefault();
+		});
+		
+		//Hide Popup
+		$('.contact-close-btn').on('click', function() {
+			$('.contact-popup').removeClass('popup-visible');
+             $('body').removeClass('body-overlay');
+		});
+	}
     // marquage-slider
   $('.marquage-slider').slick({
     slidesToShow: 3,
