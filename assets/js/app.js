@@ -74,7 +74,6 @@ $("document").ready(function () {
 			$('.contact-popup').addClass('popup-visible');
             $('body').addClass('body-overlay');
             
-            e.preventDefault();
 		});
 		
 		//Hide Popup
@@ -83,6 +82,8 @@ $("document").ready(function () {
              $('body').removeClass('body-overlay');
 		});
 	}
+    
+    
     
     //Mon espace Popup
 	if($('.espace-box-btn').length){
@@ -101,6 +102,18 @@ $("document").ready(function () {
              $('body').removeClass('body-overlay');
 		});
 	}
+    
+    
+    // After Form Submitted Validation
+     function validateUsername() { 
+      usernameValue = $('#usernames').val(); 
+     }
+			$(".form_btn .contact-btn").click(function(event){
+				
+					alert('No errors: Form will be submitted');
+				
+			});
+			
     // marquage-slider
   $('.marquage-slider').slick({
     slidesToShow: 3,
