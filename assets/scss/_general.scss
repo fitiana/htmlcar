@@ -1,5 +1,13 @@
 // General Style
 
+input {
+    
+    &:focus{
+        outline: 0;        
+        box-shadow: none;
+    
+    }
+}
 .site-wrapper {
     .container-fluid {
         max-width: 1240px; 

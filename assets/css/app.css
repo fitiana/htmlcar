@@ -10789,6 +10789,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+input:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .site-wrapper .container-fluid, .site-wrapper .container-sm, .site-wrapper .container-md, .site-wrapper .container-lg, .site-wrapper .container-xl {
   max-width: 1240px;
 }
@@ -11361,6 +11367,8 @@ img {
 
 .situation_section .data-hero-form .data-input input:focus {
   outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .situation_section .data-hero-form .data-btn {
@@ -11370,6 +11378,10 @@ img {
   border: 0;
   padding: 0;
   background: none;
+}
+
+.situation_section .data-hero-form .data-btn:focus {
+  outline: none;
 }
 
 .contact-section {
@@ -11681,12 +11693,28 @@ img {
   width: 100%;
   margin: 30px auto;
   background-color: #EDEFF1;
+  position: relative;
 }
 
 .contact-page-form .contact-header {
   background-color: #E7F703;
   padding: 20px 15px;
   text-align: left;
+}
+
+.contact-page-form .popup-close-btn {
+  color: #fff;
+  position: absolute;
+  font-size: 28px;
+  top: -32px;
+  right: -22px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-page-form .popup-close-btn:hover {
+  opacity: 0.75;
 }
 
 .inner-contact {
@@ -11705,6 +11733,10 @@ img {
 }
 
 .inner-contact .contact-title .card_title:first-letter {
+  text-transform: uppercase;
+}
+
+.inner-contact .contact-title .card_title span {
   text-transform: uppercase;
 }
 
@@ -11795,6 +11827,10 @@ img {
   color: #E7F703;
 }
 
+.form-inner .form-footer {
+  margin-bottom: 20px;
+}
+
 .form-inner .form-footer p {
   color: #AAAAAA;
   font-size: 13px;
@@ -11802,7 +11838,45 @@ img {
   font-weight: normal;
 }
 
-.contact-popup {
+.form-inner .error-caption {
+  padding: 0 5px 0 15px;
+  margin-bottom: 30px;
+}
+
+.form-inner .error-caption p {
+  color: #FD2500;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: 'Gotham Book';
+  font-weight: normal;
+}
+
+.form-inner .form-terms {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.form-inner .form-terms label {
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form-inner .form-terms .control-checkbox {
+  margin-right: 8px;
+}
+
+.form-inner .form-recaptcha {
+  margin-bottom: 25px;
+}
+
+.form-inner .form-recaptcha div {
+  margin: 0 auto;
+}
+
+.contact-popup, .espace-popup {
   z-index: 9999;
   visibility: hidden;
   opacity: 0;
@@ -11817,7 +11891,7 @@ img {
   background: rgba(30, 35, 51, 0.88);
 }
 
-.contact-popup.popup-visible {
+.contact-popup.popup-visible, .espace-popup.popup-visible {
   visibility: visible;
   opacity: 1;
 }

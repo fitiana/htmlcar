@@ -83,6 +83,24 @@ $("document").ready(function () {
              $('body').removeClass('body-overlay');
 		});
 	}
+    
+    //Mon espace Popup
+	if($('.espace-box-btn').length){
+		
+		//Show Popup
+		$('.espace-box-btn').on('click', function() {
+			$('.espace-popup').addClass('popup-visible');
+            $('body').addClass('body-overlay');
+            
+            e.preventDefault();
+		});
+		
+		//Hide Popup
+		$('.espace-close-btn').on('click', function() {
+			$('.espace-popup').removeClass('popup-visible');
+             $('body').removeClass('body-overlay');
+		});
+	}
     // marquage-slider
   $('.marquage-slider').slick({
     slidesToShow: 3,

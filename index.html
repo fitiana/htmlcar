@@ -17,7 +17,10 @@
     <!-- build:css -->
     <link href="assets/css/all.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
+    
     <!-- endbuild -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -218,7 +221,7 @@
                                 <p>Un espace client dédié pour effectuer toutes vos démarches en ligne.</p>
                             </div>
                             <div class="contact_btn mb-3">
-                                <a class="b-btn-contact" href="#"><i class="fas fa-lock"></i> Mon espace</a>
+                                <a class="b-btn-contact espace-box-btn" href="javascript:void(0)"><i class="fas fa-lock"></i> Mon espace</a>
                             </div>
                             <p class="contact-bottom text-center mb-0">Demander un accès</p>
                         </div>
@@ -234,7 +237,7 @@
                                 <p>Vous souhaitez être recontacté ? Merci de nous indiquer votre numéro de téléphone et votre numéro de contrat, nous vous rappelons dans les plus brefs délais.</p>
                             </div>
                             <div class="contact_btn mb-3">
-                                <a class="b-btn-contact" href="#">Me recontacter</a>
+                                <a class="b-btn-contact contact-box-btn" href="javascript:void(0)">Me recontacter</a>
                             </div>
                             <p class="contact-bottom text-center mb-0">&nbsp;</p>
                         </div>
@@ -390,7 +393,130 @@
                 </div>
             </div>
         </footer>
+<section  id="contact-popup" class="contact-popup contact-card">
+            <div class="contact-page-form">
+               <span class="contact-close-btn popup-close-btn theme-btn"><i class="fas fa-times"></i></span>
+                <div class="contact-header">
+                    <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
+                </div>
 
+                <div class="inner-contact">
+                    <div class="contact-title">
+                        <h3 class="card_title text-center">Être rappelé</h3>
+                    </div>
+                    <div class="form-inner">
+                        <form method="post" action="" id="contact-form">
+
+
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-name">Nom* N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-1-name" type="text" name="name">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-last-name">Prénom </label>
+                                <input class="form-input contact-form_input" id="form-1-last-name" type="text" name="last-name">
+                            </div>
+
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-tel">N° de tel* </label>
+                                <input class="form-input contact-form_input" id="form-1-tel" type="text" name="phone">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-contrat">N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-1-contrat" type="text" name="contrat">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-message">Message :</label>
+                                <textarea rows="5"  class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
+                            </div>
+                            <div class="form-footer text-left">
+                                <p>* champs obligatoires</p>
+                            </div>
+                            <div class="error-caption">
+                                <p>Le numéro de contrat n’est pas renseigné ou n’est pas renseigné correctement</p>
+                            </div>
+                            
+                             <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
+                            <div class="form_btn  text-center">
+                                <button class="contact-btn text-center">
+                                    Valider
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section  id="espace-popup" class="espace-popup contact-card">
+            <div class="contact-page-form">
+               <span class="espace-close-btn popup-close-btn theme-btn"><i class="fas fa-times"></i></span>
+                <div class="contact-header">
+                    <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
+                </div>
+
+                <div class="inner-contact">
+                    <div class="contact-title">
+                        <h3 class="card_title text-center">Demande d’accès à <br><span>« mon espace »</span></h3>
+                    </div>
+                    <div class="form-inner">
+                        <form method="post" action="" id="contact-form">
+
+
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-name">Nom* N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-1-name" type="text" name="name">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-last-name">Prénom </label>
+                                <input class="form-input contact-form_input" id="form-1-last-name" type="text" name="last-name">
+                            </div>
+
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-tel">N° de tel* </label>
+                                <input class="form-input contact-form_input" id="form-1-tel" type="text" name="phone">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-contrat">N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-1-contrat" type="text" name="contrat">
+                            </div>
+                            <div class="form_group">
+
+                                <label class="label-input" for="form-1-message">Message :</label>
+                                <textarea rows="5"  class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
+                            </div>
+                            <div class="form-footer text-left">
+                                <p>* champs obligatoires</p>
+                            </div>
+                            <div class="error-caption">
+                                <p>Le numéro de contrat n’est pas renseigné ou n’est pas renseigné correctement</p>
+                            </div>
+                            <div class="form-terms">
+                                <label class="mb-0"> <input type="checkbox" class="control-checkbox" >Je confirme ma demande d’accès à « mon espace » afin d’effectuer mes démarches en ligne</label>
+                            </div>
+                             <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
+                            <div class="form_btn  text-center">
+                                <button class="contact-btn text-center">
+                                    Valider
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
     </div>
 
 
