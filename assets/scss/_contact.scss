@@ -13,9 +13,9 @@
         background-color: $primary-color;
         padding: 20px 15px;
         text-align: left;
-        
+
     }
-    
+
     .popup-close-btn {
         color: $white_color;
         position: absolute;
@@ -24,8 +24,9 @@
         right: -22px;
         cursor: pointer;
         transition: all 0.3s ease;
+
         &:hover {
-            opacity: 0.75;    
+            opacity: 0.75;
         }
     }
 
@@ -35,6 +36,7 @@
 .inner-contact {
     margin: 0 auto;
     padding: 25px 8% 40px 8%;
+
     .contact-title {
         margin-bottom: 15px;
 
@@ -47,7 +49,7 @@
             &:first-letter {
                 text-transform: uppercase;
             }
-            
+
             span {
                 text-transform: uppercase;
             }
@@ -75,7 +77,12 @@
             font-weight: normal;
             opacity: 1;
             transition: all 0.2s ease;
-            
+
+        }
+
+        .error_label {
+
+            color: #FD2500;
         }
 
         .form-input {
@@ -85,19 +92,20 @@
             border: 1px solid $white_color;
             border-radius: 5px;
             background-color: $white_color;
-            padding: 20px 20px;
+            padding: 15px 20px;
             font-family: 'Gotham Book';
             font-weight: normal;
             color: #AAAAAA;
             font-size: 16px;
+
             &:focus {
-               border-color: $primary-color;
+                border-color: $primary-color;
                 outline: none;
                 box-shadow: none;
-               
+
             }
         }
-        
+
         .textarea-input {
             display: block;
             width: 100%;
@@ -105,36 +113,45 @@
             border: 1px solid $white_color;
             border-radius: 5px;
             background-color: $white_color;
-            padding: 20px 20px;
+            padding: 15px 20px;
             font-family: 'Gotham Book';
             font-weight: normal;
             color: #AAAAAA;
             font-size: 16px;
-            
+
             &:focus {
                 border-color: $primary-color;
                 outline: none;
                 box-shadow: none;
-               
+
             }
         }
     }
-    
-    
-    .has-value {
-        
+
+    .error_form {
+
         .label-input {
-            
+
+            color: #FD2500;
+        }
+
+    }
+
+
+    .has-value {
+
+        .label-input {
+
             opacity: 0;
             visibility: hidden;
         }
-        
+
     }
-    
+
     .form_btn {
-        
+
         text-align: center;
-        
+
         .contact-btn {
             background-color: $black_color;
             color: $white_color;
@@ -145,19 +162,18 @@
             width: 237px;
             height: 52px;
             text-align: center;
-             border-radius: 26px;
-            
+            border-radius: 26px;
+
             &:hover,
             &:focus {
                 color: $primary-color
-               
             }
         }
     }
-    
+
     .form-footer {
         margin-bottom: 20px;
-        
+
         p {
             color: #AAAAAA;
             font-size: 13px;
@@ -165,38 +181,41 @@
             font-weight: normal;
         }
     }
-    
-    
+
+
     .error-caption {
-        padding: 0 5px 0 15px; 
+        padding: 0 5px 0 15px;
         margin-bottom: 30px;
+
         p {
-           color: #FD2500; 
+            color: #FD2500;
             margin-bottom: 15px;
             font-size: 16px;
             font-family: 'Gotham Book';
             font-weight: normal;
         }
     }
-    
+
     .form-terms {
         background-color: $white_color;
         padding: 15px;
         margin-bottom: 20px;
         border-radius: 5px;
+
         label {
             line-height: 24px;
             font-weight: 500;
             font-size: 16px;
         }
-        
+
         .control-checkbox {
             margin-right: 8px;
         }
     }
-    
+
     .form-recaptcha {
         margin-bottom: 25px;
+
         div {
             margin: 0 auto;
         }
@@ -204,8 +223,9 @@
 }
 
 
-.contact-popup,  .espace-popup {
-    
+.contact-popup,
+.espace-popup {
+
     z-index: 9999;
     visibility: hidden;
     opacity: 0;
@@ -216,14 +236,30 @@
     height: 100%;
     overflow: auto;
     transition: 0.4s ease;
-    background: rgba(30, 35, 51, 0.88); 
+    background: rgba(30, 35, 51, 0.88);
 }
 
-.contact-popup.popup-visible,  .espace-popup.popup-visible{
+.contact-popup.popup-visible,
+.espace-popup.popup-visible {
     visibility: visible;
     opacity: 1;
 }
 
 .body-overlay {
     overflow: hidden;
+}
+
+
+
+.marquage-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(30, 35, 51, 0.88);
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+
 }

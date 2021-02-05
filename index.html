@@ -17,7 +17,7 @@
     <!-- build:css -->
     <link href="assets/css/all.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
-    
+
     <!-- endbuild -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -25,7 +25,8 @@
 
 <body>
 
-
+    <div id="marquageWrapper" class="marquage-box tran5s">
+    </div>
     <div class="site-wrapper">
         <header class="header-site head-sticky d-none d-lg-block">
             <div class="header-content">
@@ -100,10 +101,10 @@
             <div class="mobile-nav_container align-items-center d-flex justify-content-center">
                 <ul class="navigation-mobile">
                     <li>
-                        <a class="nav-scroll"  href="#contact">Nous contacter</a>
+                        <a class="nav-scroll" href="#contact">Nous contacter</a>
                     </li>
                     <li>
-                        <a class="nav-scroll"  href="#marquage">Le marquage Eurodatacar</a>
+                        <a class="nav-scroll" href="#marquage">Le marquage Eurodatacar</a>
                     </li>
                     <li>
                         <a href="#">Accès pro</a>
@@ -116,7 +117,7 @@
                 </ul>
             </div>
         </div>
-      <section class="single-banner hero-banner single-hero d-flex align-items-sm-center align-items-end " style="background-image: url(assets/img/1.jpg)">
+        <section class="single-banner hero-banner single-hero d-flex align-items-sm-center align-items-end " style="background-image: url(assets/img/1.jpg)">
             <div class="container-fluid">
                 <div class="banner-content">
                     <h2 class="banner-title"><span class="span-t1">Avec le marquage </span><span class="span-t2">Anti-vol eurodatacar</span>
@@ -278,25 +279,25 @@
                     </div>
                     <div class="col-marquage col-lg-4 col-md-6 mb-4">
                         <div class="marquage-item">
-                           <a href="adn-du-groupe.html" title="L’ADN du Groupe">
-                            <div class="image-box">
-                                <img src="assets/img/adn.jpg" alt="L’ADN du Groupe">
-                            </div>
-                            <div class="overlay-box">
-                                <h4 class="title_text text-center">L’ADN du Groupe</h4>
-                            </div>
+                            <a href="adn-du-groupe.html" title="L’ADN du Groupe">
+                                <div class="image-box">
+                                    <img src="assets/img/adn.jpg" alt="L’ADN du Groupe">
+                                </div>
+                                <div class="overlay-box">
+                                    <h4 class="title_text text-center">L’ADN du Groupe</h4>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-marquage col-lg-4 col-md-6 mb-4 mx-auto">
                         <div class="marquage-item">
-                           <a href="partenariats.html" title="Le marquage">
-                            <div class="image-box">
-                                <img src="assets/img/partenariats.jpg" alt="Partenariats">
-                            </div>
-                            <div class="overlay-box">
-                                <h4 class="title_text text-center">Partenariats</h4>
-                            </div>
+                            <a href="partenariats.html" title="Le marquage">
+                                <div class="image-box">
+                                    <img src="assets/img/partenariats.jpg" alt="Partenariats">
+                                </div>
+                                <div class="overlay-box">
+                                    <h4 class="title_text text-center">Partenariats</h4>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -393,9 +394,9 @@
                 </div>
             </div>
         </footer>
-<section  id="contact-popup" class="contact-popup contact-card">
+        <section id="contact-popup" class="contact-popup contact-card">
             <div class="contact-page-form">
-               <span class="contact-close-btn popup-close-btn theme-btn"><i class="fas fa-times"></i></span>
+                <span class="contact-close-btn popup-close-btn theme-btn"><i class="fas fa-times"></i></span>
                 <div class="contact-header">
                     <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
                 </div>
@@ -432,16 +433,16 @@
                             <div class="form_group">
 
                                 <label class="label-input" for="form-1-message">Message :</label>
-                                <textarea rows="5"  class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
+                                <textarea rows="5" class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
                             </div>
                             <div class="form-footer text-left">
                                 <p>* champs obligatoires</p>
                             </div>
-                            <div class="error-caption">
-                                <p>Le numéro de contrat n’est pas renseigné ou n’est pas renseigné correctement</p>
+                            <div class="error-caption invalid-feedback">
+                                <p class="invalid-contrat">Le numéro de contrat n’est pas renseigné ou n’est pas renseigné correctement</p>
                             </div>
-                            
-                             <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
+
+                            <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
                             <div class="form_btn  text-center">
                                 <button class="contact-btn text-center">
                                     Valider
@@ -454,9 +455,9 @@
 
 
         </section>
-        <section  id="espace-popup" class="espace-popup contact-card">
+        <section id="espace-popup" class="espace-popup contact-card">
             <div class="contact-page-form">
-               <span class="espace-close-btn popup-close-btn theme-btn"><i class="fas fa-times"></i></span>
+                <span class="espace-close-btn popup-close-btn theme-btn"><i class="fas fa-times"></i></span>
                 <div class="contact-header">
                     <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
                 </div>
@@ -493,7 +494,7 @@
                             <div class="form_group">
 
                                 <label class="label-input" for="form-1-message">Message :</label>
-                                <textarea rows="5"  class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
+                                <textarea rows="5" class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
                             </div>
                             <div class="form-footer text-left">
                                 <p>* champs obligatoires</p>
@@ -502,9 +503,9 @@
                                 <p>Le numéro de contrat n’est pas renseigné ou n’est pas renseigné correctement</p>
                             </div>
                             <div class="form-terms">
-                                <label class="mb-0"> <input type="checkbox" class="control-checkbox" >Je confirme ma demande d’accès à « mon espace » afin d’effectuer mes démarches en ligne</label>
+                                <label class="mb-0"> <input type="checkbox" class="control-checkbox">Je confirme ma demande d’accès à « mon espace » afin d’effectuer mes démarches en ligne</label>
                             </div>
-                             <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
+                            <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
                             <div class="form_btn  text-center">
                                 <button class="contact-btn text-center">
                                     Valider
@@ -517,6 +518,9 @@
 
 
         </section>
+
+
+
     </div>
 
 
