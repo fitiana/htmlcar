@@ -161,12 +161,14 @@
             border: 0;
             width: 237px;
             height: 52px;
+             display: inline-block;
             text-align: center;
             border-radius: 26px;
 
             &:hover,
             &:focus {
-                color: $primary-color
+                color: $primary-color;
+                text-decoration: none;
             }
         }
     }
@@ -225,7 +227,7 @@
 
 .contact-popup,
 .espace-popup {
-
+    padding: 25px;
     z-index: 9999;
     visibility: hidden;
     opacity: 0;
@@ -252,6 +254,7 @@
 
 
 .marquage-box {
+    padding: 25px;
     position: fixed;
     top: 0;
     right: 0;
@@ -261,5 +264,86 @@
     z-index: 99999;
     opacity: 0;
     visibility: hidden;
+
+    &.show-box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .marquage-container {
+        max-width: 510px;
+        width: 100%;
+        margin: 30px auto;
+        background-color: #EDEFF1;
+        position: relative;
+
+
+        .marquage-header {
+            background-color: $primary-color;
+            padding: 20px 15px;
+            text-align: left;
+        }
+
+        .marquage-close-btn {
+            color: $white_color;
+            position: absolute;
+            font-size: 28px;
+            top: -32px;
+            right: -22px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+    }
+
+
+    .inner-marquage {
+
+        padding: 30px 15px 20px;
+        text-align: center;
+
+
+        p {
+            font-size: 28px;
+            font-family: 'Gotham Book';
+            font-weight: normal;
+            line-height: 46px;
+            
+            span {
+                font-size: 10px;
+                line-height: 25px;
+                display: block;
+            }
+            
+            strong {
+                display: block;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .marquage-close-link {
+        background-color: $black_color;
+        color: $white_color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        border: 0;
+        width: 237px;
+         display: inline-block;
+        line-height: 52px;
+        text-align: center;
+        border-radius: 26px;
+
+        &:hover,
+        &:focus {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
 
 }

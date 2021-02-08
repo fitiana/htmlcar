@@ -26,6 +26,20 @@
 <body>
 
     <div id="marquageWrapper" class="marquage-box tran5s">
+        <div class="marquage-container">
+                <span class="marquage-close-btn marquage-close theme-btn"><i class="fas fa-times"></i></span>
+                <div class="marquage-header">
+                    <img class="logo-2" src="assets/img/logo_normal.svg" height="58px" alt="Eurodatacar">
+                </div>
+
+                <div class="inner-marquage">
+                <p>Nous n’avons pas <br> d’information concernant <br>l’immatriculation <strong>AA-999-AA</strong></p>
+                <p>Contactez le <br>CoPilot-Center au <br>3909* pour de plus <br>amples informations <span>*Service 0.50€ / min + prix appel</span></p>
+                <div class="btn-box text-center">
+                    <a class="marquage-close-link marquage-close text-center" href="javascript:void(0)">Fermer</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="site-wrapper">
         <header class="header-site head-sticky d-none d-lg-block">
@@ -169,7 +183,7 @@
                                 <div class="data-input">
                                     <input type="text" placeholder="AA-123-AA">
                                 </div>
-                                <button class="data-btn"><img src="assets/img/bouton-immat.svg" alt="button" height="38px" /></button>
+                                <button id="marquage-button" class="data-btn marquage-button"><img src="assets/img/bouton-immat.svg" alt="button" height="38px" /></button>
                             </div>
                         </div>
 
@@ -444,7 +458,7 @@
 
                             <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
                             <div class="form_btn  text-center">
-                                <button class="contact-btn text-center">
+                                <button class="contact-btn contact-1-btn text-center">
                                     Valider
                                 </button>
                             </div>
@@ -472,29 +486,29 @@
 
                             <div class="form_group">
 
-                                <label class="label-input" for="form-1-name">Nom* N° de contrat* </label>
-                                <input class="form-input contact-form_input" id="form-1-name" type="text" name="name">
+                                <label class="label-input" for="form-2-name">Nom* N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-2-name" type="text" name="name">
                             </div>
                             <div class="form_group">
 
-                                <label class="label-input" for="form-1-last-name">Prénom </label>
-                                <input class="form-input contact-form_input" id="form-1-last-name" type="text" name="last-name">
+                                <label class="label-input" for="form-2-last-name">Prénom </label>
+                                <input class="form-input contact-form_input" id="form-2-last-name" type="text" name="last-name">
                             </div>
 
                             <div class="form_group">
 
-                                <label class="label-input" for="form-1-tel">N° de tel* </label>
-                                <input class="form-input contact-form_input" id="form-1-tel" type="text" name="phone">
+                                <label class="label-input" for="form-2-tel">N° de tel* </label>
+                                <input class="form-input contact-form_input" id="form-2-tel" type="text" name="phone">
                             </div>
                             <div class="form_group">
 
-                                <label class="label-input" for="form-1-contrat">N° de contrat* </label>
-                                <input class="form-input contact-form_input" id="form-1-contrat" type="text" name="contrat">
+                                <label class="label-input" for="form-2-contrat">N° de contrat* </label>
+                                <input class="form-input contact-form_input" id="form-2-contrat" type="text" name="contrat">
                             </div>
                             <div class="form_group">
 
-                                <label class="label-input" for="form-1-message">Message :</label>
-                                <textarea rows="5" class="textarea-input contact-form_input" id="form-1-message" type="text" name="message"></textarea>
+                                <label class="label-input" for="form-2-message">Message :</label>
+                                <textarea rows="5" class="textarea-input contact-form_input" id="form-2-message" type="text" name="message"></textarea>
                             </div>
                             <div class="form-footer text-left">
                                 <p>* champs obligatoires</p>
@@ -507,7 +521,7 @@
                             </div>
                             <div class="g-recaptcha form-recaptcha" data-sitekey="6Lel-kYaAAAAAIeQhovE09pzjiesydOey4rcrXDy"></div>
                             <div class="form_btn  text-center">
-                                <button class="contact-btn text-center">
+                                <button class="contact-btn contact-2-btn text-center">
                                     Valider
                                 </button>
                             </div>

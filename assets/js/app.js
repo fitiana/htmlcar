@@ -106,9 +106,9 @@ $("document").ready(function () {
 
 
     // Form Submitted Validation 
-    function validateUsername() {
-       var usernameValue = $('#form-1-last-name').val();
-        if (usernameValue.length == '') {
+    function validatePhone() {
+       var phoneNumber = $('#form-1-tel').val();
+        if (phoneNumber.length == '') {
             //$('#usercheck').show();
             return false;
         } else {
@@ -116,11 +116,11 @@ $("document").ready(function () {
         }
     }
     
-    $(".form_btn .contact-btn").click(function (event) {
+    $(".form_btn .contact-1-btn").click(function (event) {
         var isAllComplete = true;
-        
-        if (validateUsername() == false) {
-            $('#form-1-last-name').parent().addClass('error_form');
+
+        if (validatePhone() == false) {
+            $('#form-1-tel').parent().addClass('error_form');
             isAllComplete = false;
         }
         
@@ -130,17 +130,17 @@ $("document").ready(function () {
 
     });
 
-    // --------------------------------- Search Box
-        var search = $("#search-button"),
-        mainSearch = $("#searchWrapper"),
-        close = $("#close-button");
-        if(search.length) {
-          search.on('click', function(){
-            mainSearch.addClass('show-box');
+    // --------------------------------- Marquage Box
+        var marquageSituation = $("#marquage-button"),
+        mainMarquage = $("#marquageWrapper"),
+        close = $(".marquage-close");
+        if(marquageSituation.length) {
+          marquageSituation.on('click', function(){
+            mainMarquage.addClass('show-box');
             $(".main-page-wrapper").addClass('blury-bg')
           });
           close.on('click', function() {
-            mainSearch.removeClass('show-box');
+            mainMarquage.removeClass('show-box');
             $(".main-page-wrapper").removeClass('blury-bg')
           });
         }

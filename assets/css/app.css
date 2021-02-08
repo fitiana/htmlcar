@@ -11827,12 +11827,14 @@ img {
   border: 0;
   width: 237px;
   height: 52px;
+  display: inline-block;
   text-align: center;
   border-radius: 26px;
 }
 
 .form-inner .form_btn .contact-btn:hover, .form-inner .form_btn .contact-btn:focus {
   color: #E7F703;
+  text-decoration: none;
 }
 
 .form-inner .form-footer {
@@ -11886,6 +11888,7 @@ img {
 
 .contact-popup,
 .espace-popup {
+  padding: 25px;
   z-index: 9999;
   visibility: hidden;
   opacity: 0;
@@ -11911,6 +11914,7 @@ img {
 }
 
 .marquage-box {
+  padding: 25px;
   position: fixed;
   top: 0;
   right: 0;
@@ -11920,6 +11924,82 @@ img {
   z-index: 99999;
   opacity: 0;
   visibility: hidden;
+}
+
+.marquage-box.show-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.marquage-box .marquage-container {
+  max-width: 510px;
+  width: 100%;
+  margin: 30px auto;
+  background-color: #EDEFF1;
+  position: relative;
+}
+
+.marquage-box .marquage-container .marquage-header {
+  background-color: #E7F703;
+  padding: 20px 15px;
+  text-align: left;
+}
+
+.marquage-box .marquage-container .marquage-close-btn {
+  color: #fff;
+  position: absolute;
+  font-size: 28px;
+  top: -32px;
+  right: -22px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.marquage-box .marquage-container .marquage-close-btn:hover {
+  opacity: 0.75;
+}
+
+.marquage-box .inner-marquage {
+  padding: 30px 15px 20px;
+  text-align: center;
+}
+
+.marquage-box .inner-marquage p {
+  font-size: 28px;
+  font-family: 'Gotham Book';
+  font-weight: normal;
+  line-height: 46px;
+}
+
+.marquage-box .inner-marquage p span {
+  font-size: 10px;
+  line-height: 25px;
+  display: block;
+}
+
+.marquage-box .inner-marquage p strong {
+  display: block;
+  font-weight: bold;
+}
+
+.marquage-box .marquage-close-link {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  width: 237px;
+  display: inline-block;
+  line-height: 52px;
+  text-align: center;
+  border-radius: 26px;
+}
+
+.marquage-box .marquage-close-link:hover, .marquage-box .marquage-close-link:focus {
+  color: #E7F703;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {
