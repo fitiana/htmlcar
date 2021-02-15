@@ -54,6 +54,18 @@ $("document").ready(function () {
         event.preventDefault();
     });
 
+    // Scroll to a Specific Div
+	if($('.scroll-to-target').length){
+		$(".scroll-to-target").on('click', function() {
+			var target = $(this).attr('data-target');
+		   // animate
+		   $('html, body').animate({
+			   scrollTop: $(target).offset().top
+			 }, 1500);
+	
+		});
+	}
+    
     /***** Contact Input Animation *******/
 
     $('.contact-form_input').on('change paste keyup', function (e) {
@@ -115,12 +127,28 @@ $("document").ready(function () {
             return true;
         }
     }
+    function validateContrat() {
+       var contratNumber = $('#form-1-contrat').val();
+        if (contratNumber.length == '') {
+            //$('#usercheck').show();
+            return false;
+        } else {
+            return true;
+        }
+    }
     
     $(".form_btn .contact-1-btn").click(function (event) {
         var isAllComplete = true;
 
         if (validatePhone() == false) {
             $('#form-1-tel').parent().addClass('error_form');
+            $('.invalid-feedback').removeClass('invalid-feedback');
+            isAllComplete = false;
+        }
+        
+        if (validateContrat() == false) {
+            $('#form-1-contrat').parent().addClass('error_form');
+            $('.invalid-feedback').removeClass('invalid-feedback');
             isAllComplete = false;
         }
         

@@ -3,7 +3,7 @@
 .header-site {
     position: relative;
     padding-top: 108px;
-    background: $black_color;
+    background: $dark_color;
     
     .header-top {
         position: absolute;
@@ -188,6 +188,7 @@
         border: 1px solid $black_color;
         text-decoration: none;
         border-radius: 30px;
+        text-transform: uppercase;
 
         span {
             display: inline-block;
